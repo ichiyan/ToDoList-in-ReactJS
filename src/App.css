@@ -124,8 +124,11 @@ select {
 select {
   color: cornflowerblue;
   font-family: "Poppins", sans-serif;
+  font-size: medium;
   cursor: pointer;
   width: 12rem;
+  padding: 0.5rem !important;
+  line-height: 1.7rem !important;
 }
 /* Arrow */
 .select::after {
@@ -137,6 +140,7 @@ select {
   background: cornflowerblue;
   cursor: pointer;
   pointer-events: none;
+  padding: 0.7rem;
 }
 /* Transition */
 /*
