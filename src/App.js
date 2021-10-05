@@ -45,8 +45,12 @@ function App() {
   }
 
   const getLocalTodos = () => {
-    let localTodos = JSON.parse(localStorage.getItem("todos"));
-    setTodos(localTodos);
+    if(localStorage.getItem("todos") === null){
+      localStorage.setItem("todos", JSON.stringify([]));
+    }else{
+      let localTodos = JSON.parse(localStorage.getItem("todos"));
+      setTodos(localTodos);
+    }
   }
 
   return (
